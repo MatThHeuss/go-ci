@@ -14,3 +14,7 @@ func Soma(a int, b int) int {
 func Subt(a int, b int) int {
 	return a - b
 }
+
+func Divide(a int, b int) int {
+	return a / b
+}
