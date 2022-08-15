@@ -20,14 +20,14 @@ jobs:
 
       - name: Set up sonarqube
         uses: sonarsource/sonarqube-scan-action@master
-        with:
+        env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
       - name: Running quality gate
         uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
-        with:
+        env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       - name: Set up QEMU
