@@ -10,3 +10,7 @@ func main() {
 func Soma(a int, b int) int {
 	return a + b
 }
+
+func Subt(a int, b int) int {
+	return a - b
+}
